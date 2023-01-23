@@ -9,7 +9,7 @@ const HeroSection = () => {
 
   return (
     <Wrapper>
-      <div className="container grid grid-two-column">
+      <div className="container grid grid-two-column heading-bg-c">
         <div className="section-hero-data">
           <p className="hero-top-data">THIS IS ME</p>
           <h1 className="hero-heading">{name}</h1>
@@ -18,7 +18,7 @@ const HeroSection = () => {
             stack Developer, youtuber and freelancer.
           </p>
           <Button className="btn hireme-btn">
-            <NavLink to="/contact"> hire me </NavLink>
+            <NavLink to="/contact" className="table-btn"> Reserve a Table </NavLink>
           </Button>
         </div>
 
@@ -40,10 +40,15 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 4.3rem;
   }
 
   .btn {
-    max-width: 16rem;
+    max-width: 14rem;
+    border-radius: 16px;
+  }
+  .table-btn{
+    font-size: 1rem;
   }
 
   .hero-top-data {
@@ -54,7 +59,6 @@ const Wrapper = styled.section`
   }
 
   .hero-heading {
-    text-transform: uppercase;
     font-size: 6.4rem;
   }
 

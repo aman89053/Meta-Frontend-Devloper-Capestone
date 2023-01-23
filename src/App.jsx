@@ -13,7 +13,8 @@ import GoToTop from "./components/GoToTop";
 const App = () => {
   const theme = {
     colors: {
-      heading: "rgb(24 24 29)",
+      heading1: "rgb(24 24 29)",
+      heading: "#f4ce14",
       text: "rgb(24 24 29)",
       white: "#fff",
       black: " #212529",

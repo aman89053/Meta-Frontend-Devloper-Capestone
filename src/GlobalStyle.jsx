@@ -29,7 +29,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
- 
+
   background: #fff;
     border: 5px solid transparent;
     border-radius: 9px;
@@ -40,7 +40,8 @@ body::-webkit-scrollbar-thumb {
 h1{
   color:${({ theme }) => theme.colors.heading};
   font-size: 6rem;
-  font-weight: 900;
+  font-weight: 600;
+  font-family: 'Markazi Text', sans-serif
 }
 
 h2 {
@@ -57,12 +58,12 @@ h2 {
 }
 
 p {
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.white};
   opacity: .7;
   font-size: 1.65rem;
   line-height: 1.5;
   margin-top: 1rem;
-  font-weight:400;
+  font-weight:600;
 }
 
 a {
@@ -85,6 +86,9 @@ li {
 
 .grid-two-column {
   grid-template-columns: repeat(2, 1fr);
+}
+.heading-bg-c{
+  background-color: #495e57;
 }
 
 .grid-three-column {
@@ -125,7 +129,7 @@ li {
 
 
 /* ===========================================
-/* media queries  
+/* media queries
 ======================================= */
 /* px  */
 /* rem  */

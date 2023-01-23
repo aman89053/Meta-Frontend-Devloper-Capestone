@@ -27,7 +27,7 @@ const Navbar = () => {
 
           &:hover,
           &:active {
-            color: ${({ theme }) => theme.colors.helper};
+            color: ${({ theme }) => theme.colors.heading};
           }
         }
       }
