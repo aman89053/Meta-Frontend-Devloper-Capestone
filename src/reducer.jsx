@@ -4,6 +4,8 @@ const reducer = (state, action) => {
       ...state,
       name: action.payload.name,
       image: action.payload.image,
+      paraa: action.payload.para,
+      parah: action.payload.parah,
     };
   }
 
@@ -12,13 +14,8 @@ const reducer = (state, action) => {
       ...state,
       name: action.payload.name,
       image: action.payload.image,
-    };
-  }
-
-  if (action.type === "GET_SERVICES") {
-    return {
-      ...state,
-      services: action.payload,
+      paraa: action.payload.paraa,
+      parah: action.payload.parah,
     };
   }
 

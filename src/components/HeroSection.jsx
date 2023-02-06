@@ -5,21 +5,22 @@ import { Button } from "../styles/Button";
 import { useGlobalContext } from "../context";
 
 const HeroSection = () => {
-  const { name, image } = useGlobalContext();
+  const { name, image ,paraa,parah} = useGlobalContext();
 
   return (
     <Wrapper>
       <div className="container grid grid-two-column heading-bg-c">
         <div className="section-hero-data">
-          <p className="hero-top-data">THIS IS ME</p>
+          <p className="hero-top-data">India and Chicago</p>
           <h1 className="hero-heading">{name}</h1>
           <p className="hero-para">
-            I'm {name}. A Full stack Developer, youtuber and freelancer. A Full
-            stack Developer, youtuber and freelancer.
+            I'm {name}. {parah} {paraa}
           </p>
+          <NavLink to="/table">
           <Button className="btn hireme-btn">
-            <NavLink to="/contact" className="table-btn"> Reserve a Table </NavLink>
+            <NavLink to="/table" className="table-btn"> Reserve a Table </NavLink>
           </Button>
+          </NavLink>
         </div>
 
         {/* for image  */}
@@ -49,13 +50,14 @@ const Wrapper = styled.section`
   }
   .table-btn{
     font-size: 1rem;
+    font-weight: 900;
   }
 
   .hero-top-data {
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 900;
     font-size: 1.5rem;
-    color: ${({ theme }) => theme.colors.helper};
+    color: ${({ theme }) => theme.colors.white};
   }
 
   .hero-heading {
@@ -80,6 +82,9 @@ const Wrapper = styled.section`
 
   .hero-img {
     max-width: 80%;
+    border-radius: 26px;
+    border-style: solid;
+    border-color: #fff;
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {

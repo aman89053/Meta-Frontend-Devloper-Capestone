@@ -1,14 +1,14 @@
 import React, { useContext, useReducer, useEffect } from "react";
 import reducer from "./reducer";
 
-const AppContext = React.createContext();
 
-const API = "https://thapareactapi.up.railway.app";
+const AppContext = React.createContext();
 
 const intialState = {
   name: "",
   image: "",
-  services: [],
+  paraa: "",
+  parah :"",
 };
 
 const AppProvider = ({ children }) => {
@@ -18,8 +18,9 @@ const AppProvider = ({ children }) => {
     return dispatch({
       type: "HOME_UPDATE",
       payload: {
-        name: "Little Lemon Restaurant",
-        image: "./images/hero.svg",
+        name: "Little Lemon",
+        image: "./images/hero1.jpg",
+        parah:"We are a family owned Mediterranean restaurant focused on traditional recipes served with a modern twist."
       },
     });
   };
@@ -30,25 +31,10 @@ const AppProvider = ({ children }) => {
       payload: {
         name: "Aman Agrawal",
         image: "./images/about1.svg",
+        paraa:"I am a Developer of this Website"
       },
     });
   };
-
-  //  to get the api data
-  const getServices = async (url) => {
-    try {
-      const res = await fetch(url);
-      const data = await res.json();
-      dispatch({ type: "GET_SERVICES", payload: data });
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  // to call the api
-  useEffect(() => {
-    getServices(API);
-  }, []);
 
   return (
     <AppContext.Provider value={{ ...state, updateHomePage, udpateAboutPage }}>
@@ -61,5 +47,4 @@ const AppProvider = ({ children }) => {
 const useGlobalContext = () => {
   return useContext(AppContext);
 };
-
 export { AppProvider, useGlobalContext };

@@ -151,6 +151,14 @@ const Navbar = () => {
               Contact
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              className="navbar-link"
+              onClick={() => setOpenMenu(false)}
+              to="/gallery">
+                gallery
+            </NavLink>
+          </li>
         </ul>
         {/* //nav icon */}
         <div className="mobile-navbar-btn">

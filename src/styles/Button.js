@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Button = styled.button`
   text-decoration: none;
   max-width: auto;
-  background-color: rgb(98 84 243);
-  color: rgb(255 255 255);
+  background-color: rgb(244 206 20);
+  color: rgb(0 0 0);
   padding: 1.4rem 2.4rem;
   border: none;
   text-transform: uppercase;
@@ -24,7 +24,8 @@ export const Button = styled.button`
 
   a {
     text-decoration: none;
-    color: rgb(255 255 255);
+    color: rgb(0 0 0);
     font-size: 1.8rem;
+    font-weight: 900;
   }
 `;

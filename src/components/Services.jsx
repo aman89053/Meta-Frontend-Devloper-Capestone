@@ -1,29 +1,31 @@
 import React from "react";
 import styled from "styled-components";
-import { useGlobalContext } from "./context";
+import { useGlobalContext } from "../context";
 import { NavLink } from "react-router-dom";
-import { Button } from "./styles/Button";
+import { Button } from "../styles/Button";
+import { MenuCard } from "./menu";
+import { useState } from "react";
+
 
 const Services = () => {
-  const { services } = useGlobalContext();
-  console.log(services);
+ const [items, setItems] = useState(MenuCard);
 
   return (
     <Wrapper className="section">
-      <h2 className="common-heading">Our Services</h2>
+      <h2 className="common-heading">This Weeks Specials !</h2>
       <div className="container grid grid-three-column">
-        {services.map((curElem) => {
+        {items.map((curElem) => {
           const { id, name, image, description } = curElem;
           return (
             <div key={id} className="card">
-              <figure>
+              <figure key={id}>
                 <img src={image} alt={name} />
               </figure>
               <div className="card-data">
                 <h3>{name}</h3>
                 <p>{description}</p>
-                <NavLink to="/service">
-                  <Button className="btn">Read More</Button>
+                <NavLink to="/gallery">
+                  <Button className="btn">Order Now</Button>
                 </NavLink>
               </div>
             </div>
@@ -41,30 +43,39 @@ const Wrapper = styled.section`
   .container {
     max-width: 120rem;
   }
+  p{
+    color:#edefee;
+    text-align: center;
+  }
 
   .card {
     border: 0.1rem solid rgb(170 170 170 / 40%);
+    background-color:#495e57;
     .card-data {
       padding: 0 2rem;
     }
 
     h3 {
       margin: 2rem 0;
-      font-weight: 300;
+      font-weight: 700;
       font-size: 2.4rem;
+      text-align: center;
+      color:#edefee;
     }
     .btn {
       margin: 2rem auto;
       background-color: rgb(0 0 0 / 0%);
-      border: 0.1rem solid rgb(98 84 243);
+      border: 0.1rem solid #f4ce14;
       display: flex;
       justify-content: center;
       align-items: center;
-      color: rgb(98 84 243);
+      color: #f4ce14;
       font-size: 1.4rem;
+      font-weight:900;
+      border-radius: 16px;
 
       &:hover {
-        background-color: rgb(98 84 243);
+        background-color: #f4ce14;
         color: #fff;
       }
     }
