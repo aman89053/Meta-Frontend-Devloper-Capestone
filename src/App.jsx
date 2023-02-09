@@ -15,6 +15,7 @@ import BookingTable from "./components/BookingTable";
 const App = () => {
   const theme = {
     colors: {
+      contact:"#495e57",
       heading1: "rgb(24 24 29)",
       heading: "#f4ce14",
       text: "rgb(24 24 29)",

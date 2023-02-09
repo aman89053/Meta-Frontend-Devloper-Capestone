@@ -47,7 +47,7 @@ const Menu = [
     price: "10₹",
     description: 'Potato strips dipped in seasoned batter and fried to golden crispiness and topped with veggies.'
 },
- 
+
    {
        id: 7,
        image: "images/allupakoida.jpg",
@@ -64,7 +64,6 @@ const Menu = [
        price: "10₹",
        description: ' Crispy corn is a snack made by frying corn and then flavoring with spice powders,It one of the very popular indo recipes.'
    },
-    
        {
        id: 9,
        image: "../images/rajmarice.jpg",
@@ -73,7 +72,7 @@ const Menu = [
        price: "60₹",
        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. '
    },
-       
+
 ];
  const MenuCard =[
     {

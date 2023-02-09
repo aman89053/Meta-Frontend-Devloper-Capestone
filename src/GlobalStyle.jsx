@@ -108,22 +108,23 @@ li {
 
     input, textarea{
     max-width: 50rem;
-    color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.colors.contact};
     padding: 1.6rem 2.4rem;
-    border: 1px solid ${({ theme }) => theme.colors.border};
+    border: 1px solid ${({ theme }) => theme.colors.heading};
     text-transform: uppercase;
    box-shadow: ${({ theme }) => theme.colors.shadowSupport};
 }
     input[type="submit"]{
     max-width: 16rem;
     margin-top: 2rem;
-    background-color: ${({ theme }) => theme.colors.btn};
-    color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }) => theme.colors.heading};
+    color: ${({ theme }) => theme.colors.black};
     padding: 1.4rem 2.2rem;
     border-style: solid;
     border-width: .1rem;
     text-transform: uppercase;
     font-size: 1.8rem;
+    font-weight: 700;
     cursor: pointer;
     }
 

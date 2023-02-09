@@ -24,8 +24,8 @@ const Contact = () => {
 
             &:hover {
               background-color: ${({ theme }) => theme.colors.white};
-              border: 1px solid ${({ theme }) => theme.colors.btn};
-              color: ${({ theme }) => theme.colors.btn};
+              border: 2px solid ${({ theme }) => theme.colors.contact};
+              color: ${({ theme }) => theme.colors.contact};
               transform: scale(0.9);
             }
           }
@@ -39,7 +39,7 @@ const Contact = () => {
       <h2 className="common-heading">Feel Free to Contact us</h2>
 
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15126.28620995241!2d73.92422475000001!3d18.59334505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c14df5c70e0d%3A0x2d19689e09e2fced!2sPhoenix%20Mall%20Washrooms!5e0!3m2!1sen!2sin!4v1658905192255!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.9113598710637!2d79.58606294980724!3d24.9010049839564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398297c3fee1cb69%3A0xefe9c4da9d803b57!2sAnurag%20City%20Center!5e0!3m2!1sen!2sin!4v1675701191592!5m2!1sen!2sin"
         width="100%"
         height="350"
         style={{ border: 0 }}

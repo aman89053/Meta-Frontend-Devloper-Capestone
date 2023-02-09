@@ -16,11 +16,10 @@ const HeroSection = () => {
           <p className="hero-para">
             I'm {name}. {parah} {paraa}
           </p>
-          <NavLink to="/table">
-          <Button className="btn hireme-btn">
+        
+          <Button className="btn hireme-btn ">
             <NavLink to="/table" className="table-btn"> Reserve a Table </NavLink>
           </Button>
-          </NavLink>
         </div>
 
         {/* for image  */}

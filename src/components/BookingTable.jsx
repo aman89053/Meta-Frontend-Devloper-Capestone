@@ -37,12 +37,12 @@ const BookingTable = () => {
           </div>
           <div className="form-row">
             <input type="text" placeholder="Full Name" />
-            <input type="text" placeholder="Phone Number" />
+            <input type="text" placeholder="Occasion" />
           </div>
-          <div className="form-row">
+          <div className="form-row" role="dialog">
             <input type="number" placeholder="How Many Persons?" min={1} />
             <NavLink to="/gallery">
-            <input type="submit" value="BOOK TABLE"/>
+            <input  type="submit" value="BOOK TABLE"/>
             </NavLink>
           </div>
         </form>
