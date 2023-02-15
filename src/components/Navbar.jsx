@@ -139,8 +139,8 @@ const Navbar = () => {
             <NavLink
               className="navbar-link"
               onClick={() => setOpenMenu(false)}
-              to="/service">
-              Services
+              to="/gallery">
+                full menu
             </NavLink>
           </li>
           <li>
@@ -149,14 +149,6 @@ const Navbar = () => {
               onClick={() => setOpenMenu(false)}
               to="/contact">
               Contact
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="navbar-link"
-              onClick={() => setOpenMenu(false)}
-              to="/gallery">
-                gallery
             </NavLink>
           </li>
         </ul>

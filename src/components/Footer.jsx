@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
 
           <div className="contact-short-btn">
-            <NavLink to="/">
+            <NavLink to="/contact">
               <Button>Get Started</Button>
             </NavLink>
           </div>
@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="container grid grid-four-column">
           <div className="footer-about">
             <h3>Little Lemon</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <p>We are a family owned Mediterranean restaurant.</p>
           </div>
 
           {/* 2nd column */}
@@ -95,7 +95,7 @@ const Wrapper = styled.section`
     max-width: 60vw;
     margin: auto;
     padding: 5rem 10rem;
-    background-color: ${({ theme }) => theme.colors.bg};
+    background-color: ${({ theme }) => theme.colors.footer_bg};
     border-radius: 1rem;
     box-shadow: ${({ theme }) => theme.colors.shadowSupport};
     transform: translateY(50%);
@@ -107,7 +107,7 @@ const Wrapper = styled.section`
 
   footer {
     padding: 14rem 0 9rem 0;
-    background-color: ${({ theme }) => theme.colors.footer_bg};
+    background-color: ${({ theme }) => theme.colors.contact};
 
     h3 {
       color: ${({ theme }) => theme.colors.hr};

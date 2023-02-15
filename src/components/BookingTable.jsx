@@ -14,7 +14,8 @@ const BookingTable = () => {
         <h3>Reservation</h3>
         <form>
           <div className="form-row">
-            <select name="days">
+            <select name="days" autoComplete="off"
+              required>
               <option value="day-select">Select Day</option>
               <option value="sunday">Sunday</option>
               <option value="monday">Monday</option>
@@ -25,7 +26,8 @@ const BookingTable = () => {
               <option value="saturday">Saturday</option>
             </select>
             <select name="hours">
-              <option value="hour-select">Select Hour</option>
+              <option value="hour-select" autoComplete="off"
+              required>Select Hour</option>
               <option value={10}>10: 00</option>
               <option value={10}>12: 00</option>
               <option value={10}>14: 00</option>
@@ -36,13 +38,17 @@ const BookingTable = () => {
             </select>
           </div>
           <div className="form-row">
-            <input type="text" placeholder="Full Name" />
-            <input type="text" placeholder="Occasion" />
+            <input type="text" placeholder="Full Name" autoComplete="off"
+              required />
+            <input type="text" placeholder="Occasion" autoComplete="off"
+              required/>
           </div>
           <div className="form-row" role="dialog">
-            <input type="number" placeholder="How Many Persons?" min={1} />
+            <input type="number" placeholder="How Many Persons?" min={1} autoComplete="off"
+              required />
             <NavLink to="/gallery">
-            <input  type="submit" value="BOOK TABLE"/>
+            <input  type="submit" value="BOOK TABLE" autoComplete="off"
+              required/>
             </NavLink>
           </div>
         </form>

@@ -9,7 +9,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
 import Error from "./Error";
 import GoToTop from "./components/GoToTop";
-import GalleryReact from "./components/GalleryReact";
+import FullMenu from "./components/FullMenu";
 import BookingTable from "./components/BookingTable";
 
 const App = () => {
@@ -23,7 +23,7 @@ const App = () => {
       black: " #212529",
       helper: "#8490ff",
       bg: "rgb(249 249 255)",
-      footer_bg: "#0a1435",
+      footer_bg: "#EE9972",
       btn: "rgb(98 84 243)",
       border: "rgba(98, 84, 243, 0.5)",
       hr: "#ffffff",
@@ -48,7 +48,7 @@ const App = () => {
           <Route path="/service" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
-          <Route path="/gallery" element={<GalleryReact />} />
+          <Route path="/gallery" element={<FullMenu/>} />
           <Route path="/table" element={<BookingTable/>} />
         </Routes>
 

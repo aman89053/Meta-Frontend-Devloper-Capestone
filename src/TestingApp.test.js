@@ -14,12 +14,10 @@ test('render heading of booking table',()=>{
 })
 
 
-    test("should render booking(input) component correctly", () => {
+    test("should render booking submmision(submit) input correctly", () => {
       render( <Router>
         <BookingTable />
     </Router>);
-      const element = screen.getByRole('dialog');
+      const element = screen.getByText("BOOK TABLE");
       expect(element).toBeInTheDocument();
     });
-
-  

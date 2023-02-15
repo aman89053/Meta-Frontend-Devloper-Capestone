@@ -31,7 +31,7 @@ const AppProvider = ({ children }) => {
       payload: {
         name: "Aman Agrawal",
         image: "./images/about1.svg",
-        paraa:"I am a Developer of this Website"
+        paraa:"I am a Developer of this Website, Hope you liked it."
       },
     });
   };

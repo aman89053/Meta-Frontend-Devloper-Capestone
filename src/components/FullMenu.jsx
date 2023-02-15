@@ -2,7 +2,7 @@ import React , {useState}from "react";
 import Menu from "./menu";
 import styled from "styled-components";
 
-function GalleryReact() {
+function FullMenu() {
   const [items, setItems] = useState(Menu);
   const filterItem = (categItem) => {
     const updatedItems = Menu.filter((curElem) => {
@@ -204,4 +204,4 @@ const Wrapper = styled.section`
 }
 `;
 
-export default GalleryReact;
+export default FullMenu;
